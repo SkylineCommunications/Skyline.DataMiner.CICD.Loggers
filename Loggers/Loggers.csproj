@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Skyline.DataMiner.CICD.$(MSBuildProjectName)</AssemblyName>
-    <RootNamespace>Skyline.DataMiner.CICD.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <AssemblyName>Skyline.DataMiner.CICD.Loggers</AssemblyName>
+    <RootNamespace>Skyline.DataMiner.CICD.Loggers</RootNamespace>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>SkylineCommunications</Authors>
@@ -12,11 +12,18 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageIcon>icon.png</PackageIcon>
     <PackageProjectUrl>https://skyline.be/</PackageProjectUrl>
-    <PackageTags>Skyline;DataMiner;CICD</PackageTags>
+    <PackageTags>Skyline;DataMiner;CICD;Logging</PackageTags>
     <Description>Library providing common methods to write to DataMiner Logging.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/SkylineCommunications/Skyline.DataMiner.CICD.Loggers</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\_NuGetItems\icon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
